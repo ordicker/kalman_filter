@@ -1,0 +1,28 @@
+[project]
+name = "kalman-filter"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Or",email = "or.dicker@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "jax (>=0.6.1,<0.7.0)",
+    "matplotlib (>=3.10.3,<4.0.0)",
+    "numpy (>=2.2.6,<3.0.0)",
+    "scipy (>=1.15.3,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "kalman_filter", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.0.0"
+python-lsp-server = "^1.12.2"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
